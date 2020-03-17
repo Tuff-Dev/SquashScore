@@ -1,0 +1,2 @@
+# SquashScore
+Squash Scoring Website
