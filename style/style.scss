@@ -1,0 +1,31 @@
+// Colours
+$main-background: #252323;
+
+$squash-yellow: #FFD400;
+
+$cta1-background: #1D1A1A;
+
+$text-light: #BBB0B0;
+$secondary: #0E7C7B;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $main-background;
+    width: 100vw;
+    height: 97vh;
+    text-align: center;
+    font-family: 'Revalia', cursive;
+}
+
+.content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1.page-heading {
+
+}
