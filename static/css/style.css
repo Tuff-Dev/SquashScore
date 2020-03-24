@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #E8E8E8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+input {
+  color: #000000;
+}
+
+form.frm {
+  background-color: none;
+  border: none;
+}
+
+body {
+  background: #252323;
+  width: 100vw;
+  height: 85vh;
+  text-align: center;
+  font-family: 'Revalia', cursive;
+}
+
+.content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.content.blur {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+h1.page-heading {
+  color: #FFD400;
+  font-size: 35px;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 500px) {
+  h1.page-heading {
+    font-size: 50px;
+  }
+}
+
+h1.page-heading span {
+  color: #FFD400;
+}
+
+.cta-1 {
+  background: #FFD400;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 18px;
+  border: 1px solid #A69C9C;
+  outline: none;
+  padding: 10px 20px;
+}
+
+.cta-1.start-match {
+  margin-top: 50px;
+}
+
+.cta-1:active {
+  background: #0E7C7B;
+  color: #000000;
+}
+
+.cta-1:disabled {
+  background: #A69C9C;
+  color: #CCCCCC;
+}
+
+.cta-2 {
+  background: #1D1A1A;
+  border-radius: 5px;
+  color: #E8E8E8;
+  font-size: 18px;
+  border: 1px solid #A69C9C;
+  outline: none;
+  padding: 10px 20px;
+  width: 40%;
+}
+
+.cta-2.start-match {
+  margin-top: 50px;
+}
+
+.cta-2:active {
+  background: #FFD400;
+  color: #000000;
+}
+
+.cta-2:disabled {
+  background: #A69C9C;
+  color: #CCCCCC;
+}
+
+.page-logo {
+  display: block;
+  width: 100vw;
+  max-width: 800px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+  .page-logo {
+    width: 70vw;
+    padding: 175px 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .page-logo {
+    width: 50vw;
+    padding: 50px 0;
+  }
+}
+
+.new-game .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.new-game .form-container .form-element {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: left;
+}
+
+.new-game .form-container .form-element p.error-text {
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.new-game .form-container .form-element p.error-text.hide {
+  display: none;
+}
+
+.new-game .form-container .form-element label {
+  position: relative;
+  top: 10px;
+}
+
+.new-game .form-container .form-element input[type=text] {
+  float: right;
+  background: #1D1A1A;
+  border: 1px solid #A69C9C;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #E8E8E8;
+  padding: 10px 15px;
+  width: 170px;
+}
+
+.new-game .form-container .form-element input[type=text]:focus {
+  outline: none;
+}
+
+.new-game .form-container .form-element input[type=number] {
+  float: right;
+  background: #1D1A1A;
+  border: 1px solid #A69C9C;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #E8E8E8;
+  padding: 10px 15px;
+  width: 80px;
+  margin-right: 90px;
+}
+
+.new-game .form-container .form-element input[type=number]:focus {
+  outline: none;
+}
+
+.new-game .__text {
+  padding-bottom: 30px;
+}
+
+form:not(.frm) {
+  width: 80%;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1D1A1A;
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  position: relative;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+
+form:not(.frm) > div {
+  color: white;
+  padding-top: 24px;
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  bottom: -4px;
+  width: calc(50% + 8px);
+  background-color: #0E7C7B;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  pointer-events: none;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+form:not(.frm)::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+form:not(.frm) label {
+  float: left;
+  width: calc(50% - 1px);
+  position: relative;
+  padding: 5px 0px 25px;
+  overflow: hidden;
+  border-left: solid 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+form:not(.frm) label:first-child {
+  border-left: none;
+}
+
+form:not(.frm) label input {
+  position: absolute;
+  top: -200%;
+}
+
+form:not(.frm) label div {
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+}
+
+form:not(.frm) label.selected {
+  color: white;
+}
+
+.player-names {
+  margin: 20px 0 10px;
+}
+
+.player-names span {
+  width: 49%;
+  text-align: center;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.serving-panel {
+  width: 100%;
+}
+
+.serving-panel .player {
+  width: calc(50% - 5px);
+  display: inline-block;
+}
+
+.serving-panel .player .LR {
+  width: 100%;
+  padding: 7px 0;
+}
+
+.serving-panel .player .LR span {
+  width: calc(50% - 20px);
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.serving-panel .player .LR span.serve {
+  background-color: #0E7C7B;
+}
+
+.serving-panel .player .LR span.hide {
+  opacity: 0;
+}
+
+.point-buttons {
+  width: 100%;
+  height: 200px;
+  padding-top: 15px;
+}
+
+.point-buttons h2 {
+  margin-top: 85px;
+  font-size: 16px;
+}
+
+.point-buttons .point-buttons__left {
+  width: 48%;
+  height: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+
+.point-buttons .point-buttons__right {
+  width: 48%;
+  height: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.option-buttons {
+  margin-top: 18px;
+}
+
+.match-end {
+  margin-top: 18px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #0E7C7B;
+  margin: 50px auto;
+  padding: 15px;
+  width: 75%;
+  max-width: 500px;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.modal-content h3 {
+  font-size: 25px;
+  color: #000000;
+}
+
+.modal-content h4 {
+  color: #E8E8E8;
+}
+
+.modal-content h4.space {
+  margin-bottom: 30px;
+}
+
+.modal-content .options {
+  height: 180px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.modal-content .options h5 {
+  margin-top: 80px;
+}
+
+.modal-content .options .left {
+  width: 48%;
+  height: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content .options .right {
+  width: 48%;
+  height: 100%;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.modal-content .options .right h5 {
+  color: #000000;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#serveSelect {
+  display: none;
+}
+
+.game-scores {
+  text-align: left;
+  margin: 0 auto 120px;
+  max-width: 300px;
+}
+
+.game-score {
+  float: right;
+}
+
+.game {
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */

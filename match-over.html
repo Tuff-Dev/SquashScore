@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squash Score</title>
+    <title>Squash Score | New Match</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Revalia&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 <body>
     <div class="content">
-        <img class="page-logo" src="./img/SquashScore_Logo_WithTitle.svg" alt="Squash Score Logo">
+        <h1 class="page-heading">Match Over</h1>
+        <div class="player-names">
+            <span id="player1Name" class="player">Player 1</span>
+            <span id="player2Name" class="player">Player 2</span>
+        </div>
+        <h1 id="score" class="page-heading"><span id="p1MatchScore">2</span> - <span id="p2MatchScore">1</span></h1>
+
+        <div class="game-scores">
+
+        </div>
+
         <form class="frm" action="new-match.html">
             <button type="submit" class="cta-1">New Match</button>
         </form>
     </div>
-
-    <script src="./dist/js/main.min.js"></script>
+    
+    <script src="./dist/js/match-over.min.js"></script>
+    
 </body>
 </html>

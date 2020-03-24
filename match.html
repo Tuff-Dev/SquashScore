@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squash Score | Match</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Revalia&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+<body>
+    <div class="content">
+        <div class="player-names">
+            <span id="player1Name" class="player">Player 1</span>
+            <span id="player2Name" class="player">Player 2</span>
+        </div>
+        <h1 id="score" class="page-heading"><span id="p1GameScore">11</span> (<span id="p1MatchScore">2</span>)-(<span id="p2MatchScore">1</span>) <span id="p2GameScore">7</span></h1>
+    
+        <div class="serving-panel">
+            <div class="player">
+                <div class="LR">
+                    <span>L</span>
+                    <span>R</span>
+                </div>
+                <div class="LR">
+                    <span id="p1Left" class="serve">Serve</span>
+                    <span id="p1Right" class="serve hide">Serve</span>
+                </div>
+            </div>
+            <div class="player">
+                <div class="LR">
+                    <span>L</span>
+                    <span>R</span>
+                </div>
+                <div class="LR">
+                    <span id="p2Left" class="serve hide">Serve</span>
+                    <span id="p2Right" class=" serve hide">Serve</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="point-buttons">
+            <div class="point-buttons__left">
+                <h2>
+                    Player 1 Point
+                </h2>
+            </div>
+            <div class="point-buttons__right">
+                <h2>
+                    Player 2 Point
+                </h2>
+            </div>
+        </div>
+    
+        <div class="option-buttons">
+            <button id="undoLastPointBtn" class="cta-2">Undo</button>
+            <button id="switchServingSideBtn" class="cta-2">Switch Side</button>
+        </div>
+
+        <div class="match-end">
+            <button class="cta-1">End Game</button>
+        </div>
+
+    
+    </div>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- <span class="close">&times;</span> -->
+            <div id="handoutSelect">
+                <h3 id="handOutTxt">Hand Out</h3>
+                <h4>Serve from</h4>
+                <div class="options">
+                    <div class="left">
+                        <h5>Left</h5>
+                    </div>
+                    <div class="right">
+                        <h5>Right</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="serveSelect">
+                <h4 id="handOutTxt">Who is serving?</h4>
+                <div class="options">
+                    <div class="left">
+                        <h5 id="selectP1Name">Player 1</h5>
+                    </div>
+                    <div class="right">
+                        <h5 id="selectP2Name">Player 2</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="two-clear-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="twoClearSelect">
+                <h4 id="space">2 Points Clear?</h4>
+                <div class="options">
+                    <div class="left">
+                        <h5>Yes</h5>
+                    </div>
+                    <div class="right">
+                        <h5>No</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="/scripts/main.js"></script> -->
+    <script src="./dist/js/match.min.js"></script>
+</body>
+</html>
