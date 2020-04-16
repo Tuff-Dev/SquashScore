@@ -17,6 +17,12 @@ $(document).ready(function(event) {
     $("#undoLastPointBtn").click(function() {
         currentMatch.undoLastPoint();
     });
+    $("#endMatch").click(function() {
+        endMatch();
+    });
+    $("#switchServingPlayerBtn").click(function() {
+        selectServingPlayer(currentMatch);
+    });
 });
 
 function Match(p1Name, p2Name, p1Handicap, p2Handicap, gameType, bestOf, playTo, games) {
@@ -411,4 +417,10 @@ function loadMatch() {
 
     $("#player1Name").text(this.currentMatch.p1Name);
     $("#player2Name").text(this.currentMatch.p2Name);
+}
+
+function endMatch() {
+    currentMatch.matchOver = true;
+    saveMatch();
+    window.location.href = 'match-over.html';
 }

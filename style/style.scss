@@ -12,7 +12,7 @@ $secondary: #0E7C7B;
 $smartphone-breakpoint: 500px; 
 $tablet-breakpoint: 1000px;
 
-* {
+* { 
     margin: 0;
     padding: 0;
     color: $text-light;
@@ -95,12 +95,15 @@ h1.page-heading {
     outline: none;
     padding: 10px 20px;
     width: 40%;
+
+    &.alt {
+        width: 45%;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
     &.start-match {
         margin-top: 50px;
-    }
-    &:hover {
-        // background: $secondary;
-        // color: $text-light;
     }
 
     &:active {
@@ -166,6 +169,7 @@ h1.page-heading {
                 color: $text-light;
                 padding: 10px 15px;
                 width: 170px;
+                -webkit-user-select:text;
                 &:focus{
                     outline: none;
                 }
